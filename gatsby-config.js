@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Varm`,
+    position: `Backend developer`,
     description: `Um blog sobre desenvolvimento, com o foco em qualidade e aprendizado contínuo.`,
     author: `@victoramorim`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
