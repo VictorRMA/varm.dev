@@ -4,6 +4,7 @@ title: 'Single Responsibility Principle'
 description: 'A importância da alta coesão e baixo acoplamento fundamentado neste princípio do SOLID.'
 category: 'SOLID'
 background: '#cf4647'
+image: "/assets/img/desert.jpg"
 ---
 
 Fala galera, tudo beleza? Começando então a fase de aprofundamento dos princípios do SOLID, nada mais lógico que começar com a letra _S_.

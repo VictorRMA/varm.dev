@@ -8,8 +8,10 @@ module.exports = {
     position: `Backend developer`,
     description: `Um blog sobre desenvolvimento, com o foco em qualidade e aprendizado contínuo.`,
     author: `@victoramorim`,
+    siteUrl: `https://varm.dev`
   },
   plugins: [
+    `gatsby-plugin-transition-link`, 
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     // needs to be the first
@@ -72,17 +74,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Varm`,
+        short_name: `Varm`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#16202c`,
+        theme_color: `#16202c`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `static/assets/img/Varm.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
