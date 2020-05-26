@@ -2,8 +2,8 @@
 title: Cinco princípios fundamentais da programação orientada a objetos.
 description: Introdução ao SOLID, os cinco princípios fundamentais da
   programação orientada a objetos.
-date: 2019-09-08 11:45:00
-thumbnail: assets/img/desert.jpg
+date: 2019-09-08T11:45:00.000Z
+thumbnail: assets/img/Varm.png
 category: solid
 background: "#cf4647"
 ---
