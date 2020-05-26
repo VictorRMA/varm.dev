@@ -1,10 +1,12 @@
 ---
-date: 2019-09-15 11:45:00
-title: 'Single Responsibility Principle'
-description: 'A importância da alta coesão e baixo acoplamento fundamentado neste princípio do SOLID.'
-category: 'SOLID'
-background: '#cf4647'
-image: "/assets/img/desert.jpg"
+title: Single Responsibility Principle
+description: A importância da alta coesão e baixo acoplamento fundamentado neste
+  princípio do SOLID.
+date: 2019-09-15T11:45:00.000Z
+category: solid
+background: "#cf4647"
+image: /assets/img/desert.jpg
+thumbnail: assets/img/Varm.png
 ---
 
 Fala galera, tudo beleza? Começando então a fase de aprofundamento dos princípios do SOLID, nada mais lógico que começar com a letra _S_.
@@ -12,8 +14,6 @@ Fala galera, tudo beleza? Começando então a fase de aprofundamento dos princí
 > Uma classe deve ter um, e apenas um, motivo para mudar.
 
 Mas, espera aí, um _motivo para mudar_? O que isso significa? Vamos lá!
-
-![Desert](/assets/img/desert.jpg)
 
 ### Coesão
 Podemos explicar este princípio utilizando uma conceito muito difundido na área de TI, que é a coesão.
