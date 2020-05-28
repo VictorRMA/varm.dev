@@ -62,5 +62,8 @@ const GlobalStyles = createGlobalStyle`
   	width: 100%;
   	height: auto;
   }
+  em {
+    font-style: italic;
+  }
 `
 export default GlobalStyles
