@@ -2,7 +2,7 @@
 title: Single Responsibility Principle
 description: A importância da alta coesão e baixo acoplamento fundamentado neste
   princípio do SOLID.
-date: 2019-09-15T11:45:00.000Z
+date: 2020-05-28T11:45:00.000Z
 category: solid
 background: "#cf4647"
 image: /assets/img/desert.jpg
