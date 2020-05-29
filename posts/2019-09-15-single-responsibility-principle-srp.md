@@ -18,7 +18,7 @@ Mas, espera aí, um *motivo para mudar*? O que isso significa? Vamos lá!
 
 Podemos explicar este princípio utilizando um conceito muito difundido na área de TI, que é a coesão. A coesão é medida através da número de responsabilidades de uma classe. Quanto mais coesa, menor é seu número de responsabilidades.
 
-Buscamos a alta coesão não só com o objetivo de simplificar o entendimento da classe, mas também de facilitar sua manutenção, já que se ao alterarmos uma classe com uma responsabilidade bem definida(alta coesão) corremos menor risco de inviabilizar outros serviços que não tem relação com real problema. 
+Buscamos a alta coesão não só com o objetivo de simplificar o entendimento da classe, mas também de facilitar sua manutenção, já que se ao alterarmos uma classe com uma responsabilidade bem definida(alta coesão) corremos menor risco de inviabilizar outros serviços que não tem relação com o real problema.
 
 ### Um motivo para mudar
 
@@ -40,17 +40,17 @@ public class Pedido
 }
 ```
 
-Cada um dos seus métodos possuem responsabilidades distintas. O método _CalcularValorTotal()_ possui total sinergia com o que a Classe se propõe, não é mesmo? Não causa nenhuma estranheza vê-lo ali, e criar esse senso de _estranheza_ é uma das coisas mais importantes para esse princípio (já já falarei mais a respeito).
+Cada um dos seus métodos possuem responsabilidades distintas. O método *CalcularValorTotal()* possui total sinergia com o que a Classe se propõe, não é mesmo? Não causa nenhuma estranheza vê-lo ali, e criar esse senso de *estranheza* é uma das coisas mais importantes para esse princípio (já já falarei mais a respeito).
 
-Nos outros dois métodos, apesar de ter uma certa ligação com _pedidos_, cada um possui um propósito que não cabe a Classe. Pense que, no caso do método _EmitirComprovante()_, cada vez que a regra de comprovante mudar teremos que mexer também na classe de Pedidos. Somado isso, mais as mudanças que teremos que realizar caso regras referentes a pedidos se alterem, já temos no mínimo dois motivos para mudar (opa!).
+Nos outros dois métodos, apesar de ter uma certa ligação com *pedidos*, cada um possui um propósito que não cabe a classe. Pense que, no caso do método *EmitirComprovante()*, cada vez que a regra de comprovante mudar teremos que mexer também na classe de Pedidos. Somado isso, mais as mudanças que teremos que realizar caso regras referentes a pedidos se alterem, já temos no mínimo dois motivos para mudar (opa!).
 
-Agora, se quando bateu os olhos na classe, mais especificamente no último método _GerarNotaFiscal_() e aquela sensação de estranheza subiu no seu coração, você está no caminho certo!
+Agora, se quando bateu os olhos na classe, mais especificamente no último método *GerarNotaFiscal()* e aquela sensação de estranheza subiu no seu coração, você está no caminho certo!
 
 ### Cultive a sensação de estranheza (aka. sensor aranha)
 
-Parece meio engraçado, mas é pura realidade. No mundo real, com implementações que de tão complexas fogem de qualquer exemplo, às vezes se torna muito complicado saber se determinada implementação está no local que deveria. Mas, com mais e mais experiência esses casos vão ficando cada vez menores e um senso de percepção começa a surgir, que chamo de _senso de estranheza_. Me darei o direito de criar uma tangente a seguir para exemplificar o que estou querendo dizer com isso.
+Parece meio engraçado, mas é pura realidade. No mundo real, com implementações que de tão complexas fogem de qualquer exemplo, às vezes se torna muito complicado saber se determinada implementação está no local que deveria. Mas, com mais e mais experiência esses casos vão ficando cada vez menores e um senso de percepção começa a surgir, que chamo de *senso de estranheza*. Vou me permitir criar uma tangente a seguir para exemplificar o que estou querendo dizer com isso.
 
-Durante minha adolescência, tive uma professora de português que me ensinou o seguinte truque: _Caso tenha dúvidas sobre a escrita de uma palavra, escreva das formas com que pensa ser, você vai descobrir qual é o certo só de olhar (na maioria das vezes rsrs)_. O fato é, pensar em escrever uma palavra, como "desli*z*ar" ou "desli*s*ar", pode causar certo problema para alguns, mas quando vemos a palavra "desli*s*ar" escrita, imediatamente nos vem aquela sensação de estranheza, como se algo não estivesse certo. E o melhor de tudo é que geralmente isso se confirma :).
+Durante minha adolescência, tive uma professora de português que me ensinou o seguinte truque: *Caso tenha dúvidas sobre a escrita de uma palavra, escreva das formas com que pensa ser, você vai descobrir qual é o certo só de olhar (na maioria das vezes rsrs)*. O fato é, pensar em escrever uma palavra, como "desli**z**ar" ou "desli**s**ar", pode causar certo problema para alguns, mas quando vemos a palavra "desli**s**ar" escrita, imediatamente nos vem aquela sensação de estranheza, como se algo não estivesse certo. E o melhor de tudo é que geralmente isso se confirma :).
 
 Voltando para o mundo do desenvolvimento, essa sensação de estranheza é muito importante e vai ficando mais forte e assertiva conforme nossa bagagem vai aumentando. Às vezes não sabemos o porque, ou até como resolver, mas sabemos que algo não está certo. Quem nunca?
 
